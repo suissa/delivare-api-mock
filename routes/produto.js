@@ -1119,6 +1119,11 @@ const produto_11 = {
 });
 
 
+router.get('/cep', (req, res) => {
+  const end = {"resultado":"1","resultado_txt":"sucesso - cep completo","uf":"SP","cidade":"Jandira","bairro":"Jardim Rosa Em\u00edlia","logradouro":"Rua Maria Aparecida Pedrosa"}
+  res.json(end)
+})
+
 router.post('/cep', (req, res) => {
   res.json(produstosIniciais)
 })
